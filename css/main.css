@@ -108,6 +108,88 @@ html {
       width: 14vw;
   }
 }
+
+.topnav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background:#F25C54;
+  
+}
+
+header ::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  font-size: 2vw;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 28px;
+  padding-bottom: 23px;
+  position: relative;
+}
+
+nav a {
+  color: #f2f2f2 ;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+nav a:hover {
+  color: #000;
+}
+
+a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+ background-color:#F69D62;
+ position: absolute;
+ top: 0;
+ width: 0%;
+ transition: all ease-in-out 210ms;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.sml__spin li{
+animation-name: spinner;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+transform-style: preserve-3d;
+text-align:center;
+}
+@keyframes spinner {
+from {
+  transform: rotateY(0deg);
+}
+to {
+  transform: rotateY(-360deg);
+}
+}
+
+
   /* BLUE PALETTE
   
   91E5F6 386FA4 59A5D8 84D2F6 91E5F6
