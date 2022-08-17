@@ -202,6 +202,7 @@ animation-iteration-count: infinite;
 animation-duration: 1s;
 transform-style: preserve-3d;
 text-align:center;
+list-style: none;
 }
 @keyframes spinner {
 from {
