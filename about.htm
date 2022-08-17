@@ -103,5 +103,13 @@
     <script>
       AOS.init({});
     </script>
+    <script>
+        $(document).ready(function(){
+          $('.btn').click(function(){
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+     </script>
 </body>
 </html>
