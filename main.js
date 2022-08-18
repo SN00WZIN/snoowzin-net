@@ -1,1 +1,1 @@
-$(Document).body.nav.ul.getElementsById("memes").click(alert("aba de memes não esta pronta :/ (ou ta sem meme ;-;, manda um ae pfvr"))
+$(Document).body.getElementsById("#memes").click(alert("aba de memes não esta pronta :/ (ou ta sem meme ;-;, manda um ae pfvr"))

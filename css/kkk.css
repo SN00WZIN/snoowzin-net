@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1vh;
+    text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+    overflow: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    50%{background-position:100% 19%}
+}/@-moz-keyframes rainbow {
+    50%{background-position:100% 19%}
+    
+}
+@-o-keyframes rainbow {
+    50%{background-position:100% 19%}
+}
+@keyframes rainbow { 
+    50%{background-position:100% 19%}
+}
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+  }
+  
+  
+  #end__of__page {
+    margin-bottom: -30vh;
+  }
+  
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .hero__header {
+    font-size: 6vw;
+    font-weight: 400;
+  }
+  .orange_higlighted{
+    background-color: #F9A875;
+      border-radius: 20px;
+      line-height: 1.5;
+      padding-right: 0.9vw;
+      padding-left: 0.9vw;
+      font-weight: 520;
+      text-shadow: none;
+      box-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+  }
+  
+  .pink__colored {
+    color: #F25C54;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divider__line {
+    height: 4vw;
+  }
+  
+  .about__header {
+    font-size: 3vw;
+    font-weight: 400;
+  }
+  
+  .logo {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .logo__image {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 10vw;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .hero__header {
+        font-size: 12vw;
+        font-weight: 400;
+    }
+  
+    .about__header {
+        font-size: 5vw;
+        font-weight: 400;
+    }
+  
+    .divider__line {
+        height: 8vw;
+    }
+  
+    .logo__image {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 14vw;
+    }
+  }
+  
+  nav{
+    background: #151515;
+    padding: 5px 40px;
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li{
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  nav ul li.items{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+  }
+  nav ul li.items:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #F25C54;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  nav ul li.items:hover:after{
+    opacity: 1;
+    bottom: 8px;
+  }
+  nav ul li.navlogo{
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+  }
+  nav ul li:hover a{
+    color: #F25C54;
+  }
+  nav ul li i{
+    font-size: 23px;
+  }
+  nav ul li.btn{
+    display: none;
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+  @media all and (max-width: 900px){
+    nav{
+      padding: 5px 30px;
+    }
+    nav ul li.items{
+      width: 100%;
+      display: none;
+    }
+    nav ul li.items.show{
+      display: block;
+    }
+    nav ul li.btn{
+      display: block;
+    }
+    nav ul li.items:hover{
+      border-radius: 5px;
+      box-shadow: inset 0 0 5px #F25C54,
+                  inset 0 0 10px #F37259;
+    }
+    nav ul li.items:hover:after{
+      opacity: 0;
+    }
+  
+}
+    /* BLUE PALETTE
+    
+    91E5F6 386FA4 59A5D8 84D2F6 91E5F6
+    
+  
+        RED PALLETE
+  
+    f7b267 f79d65 f4845f f27059 f25c54
+  
+  
+    */
