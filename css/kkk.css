@@ -22,7 +22,7 @@ background-size: 1800% 1800%;
 
 @-webkit-keyframes rainbow {
     50%{background-position:100% 19%}
-}/@-moz-keyframes rainbow {
+}@-moz-keyframes rainbow {
     50%{background-position:100% 19%}
     
 }
@@ -32,7 +32,6 @@ background-size: 1800% 1800%;
 @keyframes rainbow { 
     50%{background-position:100% 19%}
 }
-  }
   ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
